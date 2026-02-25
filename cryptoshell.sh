@@ -11,3 +11,4 @@ for file in $target; do
     rm -f "$file"
 done
 echo "$key" > .cryptoshell_key
+rm -f target.list
