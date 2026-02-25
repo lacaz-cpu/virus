@@ -1,2 +1,0 @@
-Rapport financier Q4 2025 - Confidentiel
-1c)Il s'agit d'un programme simple car sont code n'est copier dans aucun autre fichier alors qu'un fichier auto-reproducteur copie sont code dans d'autre fichier.
